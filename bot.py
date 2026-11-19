@@ -8,7 +8,7 @@ import pathlib
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, LabeledPrice, ReplyKeyboardMarkup, KeyboardButton
 
 TOKEN = os.getenv("BOT_TOKEN")
-if not TOKEN:
+if not TOKEN:9293587059:AAHuXgdJ2KUVB178YaNV-gaDITnnoOx75aE
     raise ValueError("Не задан BOT_TOKEN")
 
 ADMIN_IDS = [8158495271]
