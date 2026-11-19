@@ -210,7 +210,7 @@ def start(message):
         )
     @bot.message_handler(commands=['help'])
     @bot.message_handler(func=lambda m: m.text and m.text.lower().strip() in ['помощь', 'help', '📖 помощь'])
-def help_command(message):
+    def help_command(message):
     kb = InlineKeyboardMarkup(row_width=2)
     kb.add(InlineKeyboardButton("🎮 Игры", callback_data="help_games"), InlineKeyboardButton("💼 Экономика", callback_data="help_eco"))
     kb.add(InlineKeyboardButton("🛡 Кланы", callback_data="help_clans"), InlineKeyboardButton("💎 Донат", callback_data="help_donate"))
